@@ -145,4 +145,8 @@ if (-not $args) {
                 "$env:USERPROFILE\AppData\Local\Temp\MAS*.b64", "$env:USERPROFILE\AppData\Local\Temp\MAS*.bat")
     foreach ($pattern in $FilePaths) {
         Get-Item $pattern -ErrorAction SilentlyContinue | Remove-Item -Force }
+    
+    Write-Host ""
+    Write-Host "Troubleshooting process has finished unsuccessful." -ForegroundColor Red
+    Write-Host "Please Contact Support."
 } @args
